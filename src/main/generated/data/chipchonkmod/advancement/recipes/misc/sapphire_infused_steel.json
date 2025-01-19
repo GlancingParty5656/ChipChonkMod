@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cut_sapphire": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chipchonkmod:cut_sapphire"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_steel_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chipchonkmod:steel_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chipchonkmod:sapphire_infused_steel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_steel_ingot",
+      "has_cut_sapphire"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chipchonkmod:sapphire_infused_steel"
+    ]
+  }
+}

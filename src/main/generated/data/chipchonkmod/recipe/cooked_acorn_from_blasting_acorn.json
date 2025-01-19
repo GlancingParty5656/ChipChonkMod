@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "group": "acorn",
+  "ingredient": {
+    "item": "chipchonkmod:acorn"
+  },
+  "result": {
+    "id": "chipchonkmod:cooked_acorn"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "chipchonkmod:block/blue_oak_planks"
+  }
+}

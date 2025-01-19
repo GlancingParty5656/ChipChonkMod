@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "group": "sapphire",
+  "ingredient": {
+    "item": "chipchonkmod:deepslate_sapphire_ore"
+  },
+  "result": {
+    "id": "chipchonkmod:sapphire"
+  }
+}

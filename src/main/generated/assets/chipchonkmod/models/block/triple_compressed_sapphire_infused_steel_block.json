@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chipchonkmod:block/triple_compressed_sapphire_infused_steel_block"
+  }
+}

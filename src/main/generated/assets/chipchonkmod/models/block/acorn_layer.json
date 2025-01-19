@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "chipchonkmod:block/acorn_layer_block"
+  }
+}

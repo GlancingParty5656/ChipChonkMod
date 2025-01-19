@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "chipchonkmod:sapphire"
+  },
+  "result": {
+    "count": 1,
+    "id": "chipchonkmod:cut_sapphire"
+  }
+}

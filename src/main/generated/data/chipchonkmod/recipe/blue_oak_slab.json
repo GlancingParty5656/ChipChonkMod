@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "chipchonkmod:blue_oak_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "   ",
+    "PPP"
+  ],
+  "result": {
+    "count": 6,
+    "id": "chipchonkmod:blue_oak_slab"
+  }
+}

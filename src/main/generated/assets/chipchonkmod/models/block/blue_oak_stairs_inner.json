@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "chipchonkmod:block/blue_oak_planks",
+    "side": "chipchonkmod:block/blue_oak_planks",
+    "top": "chipchonkmod:block/blue_oak_planks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 1200,
+  "experience": 0.35,
+  "group": "coal",
+  "ingredient": {
+    "item": "minecraft:coal"
+  },
+  "result": {
+    "id": "chipchonkmod:carbon"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    "chipchonkmod:sapphire_block",
+    "chipchonkmod:sapphire_ore",
+    "chipchonkmod:deepslate_sapphire_ore",
+    "chipchonkmod:sapphire_infused_steel_block",
+    "chipchonkmod:compressed_sapphire_infused_steel_block",
+    "chipchonkmod:double_compressed_sapphire_infused_steel_block",
+    "chipchonkmod:triple_compressed_sapphire_infused_steel_block",
+    "chipchonkmod:quadruple_compressed_sapphire_infused_steel_block",
+    "chipchonkmod:quadruple_compressed_sapphire_infused_steel_block_pressure_plate",
+    "chipchonkmod:celestial_nylium",
+    "chipchonkmod:astral_nylium",
+    "chipchonkmod:steel_block"
+  ]
+}

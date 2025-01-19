@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chipchonkmod:sapphire_infused_steel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "chipchonkmod:sapphire_infused_steel"
+  }
+}

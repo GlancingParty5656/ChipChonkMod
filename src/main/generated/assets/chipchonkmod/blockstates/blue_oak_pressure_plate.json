@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "chipchonkmod:block/blue_oak_pressure_plate"
+    },
+    "powered=true": {
+      "model": "chipchonkmod:block/blue_oak_pressure_plate_down"
+    }
+  }
+}

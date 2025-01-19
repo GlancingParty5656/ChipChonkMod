@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_down",
+  "textures": {
+    "texture": "chipchonkmod:block/quadruple_compressed_sapphire_infused_steel_block"
+  }
+}

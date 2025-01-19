@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "chipchonkmod:steel_ingot"
+    },
+    {
+      "item": "chipchonkmod:steel_ingot"
+    },
+    {
+      "item": "chipchonkmod:steel_ingot"
+    },
+    {
+      "item": "chipchonkmod:steel_ingot"
+    },
+    {
+      "item": "chipchonkmod:steel_ingot"
+    },
+    {
+      "item": "chipchonkmod:steel_ingot"
+    },
+    {
+      "item": "chipchonkmod:steel_ingot"
+    },
+    {
+      "item": "chipchonkmod:steel_ingot"
+    },
+    {
+      "item": "chipchonkmod:steel_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chipchonkmod:steel_block"
+  }
+}

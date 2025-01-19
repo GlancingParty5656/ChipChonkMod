@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "chipchonkmod:compressed_sapphire_infused_steel_block"
+    },
+    {
+      "item": "chipchonkmod:compressed_sapphire_infused_steel_block"
+    },
+    {
+      "item": "chipchonkmod:compressed_sapphire_infused_steel_block"
+    },
+    {
+      "item": "chipchonkmod:compressed_sapphire_infused_steel_block"
+    },
+    {
+      "item": "chipchonkmod:compressed_sapphire_infused_steel_block"
+    },
+    {
+      "item": "chipchonkmod:compressed_sapphire_infused_steel_block"
+    },
+    {
+      "item": "chipchonkmod:compressed_sapphire_infused_steel_block"
+    },
+    {
+      "item": "chipchonkmod:compressed_sapphire_infused_steel_block"
+    },
+    {
+      "item": "chipchonkmod:compressed_sapphire_infused_steel_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chipchonkmod:double_compressed_sapphire_infused_steel_block"
+  }
+}

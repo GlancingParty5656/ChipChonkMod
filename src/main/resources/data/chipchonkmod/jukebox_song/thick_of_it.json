@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.chipchonkmod.thick_of_it_music_disc.desc"
+  },
+  "length_in_seconds": 161.0,
+  "sound_event": "chipchonkmod:thick_of_it"
+}

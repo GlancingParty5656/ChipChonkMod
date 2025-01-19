@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "Q": {
+      "item": "chipchonkmod:quadruple_compressed_sapphire_infused_steel_block_pressure_plate"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "Q ",
+    "S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "chipchonkmod:quadruple_compressed_sapphire_infused_steel_block_pressure_plate_on_a_stick"
+  }
+}

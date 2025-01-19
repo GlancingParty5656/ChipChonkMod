@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acorn_bits": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chipchonkmod:acorn_bits"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chipchonkmod:acorn_stew"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_acorn_bits"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chipchonkmod:acorn_stew"
+    ]
+  }
+}

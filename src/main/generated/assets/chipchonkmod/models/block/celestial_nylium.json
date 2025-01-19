@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chipchonkmod:block/celestial_nylium_bottom",
+    "side": "chipchonkmod:block/celestial_nylium",
+    "top": "chipchonkmod:block/celestial_nylium_top"
+  }
+}

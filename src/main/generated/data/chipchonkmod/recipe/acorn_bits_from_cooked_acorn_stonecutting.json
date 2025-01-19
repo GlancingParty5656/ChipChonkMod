@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "chipchonkmod:cooked_acorn"
+  },
+  "result": {
+    "count": 1,
+    "id": "chipchonkmod:acorn_bits"
+  }
+}

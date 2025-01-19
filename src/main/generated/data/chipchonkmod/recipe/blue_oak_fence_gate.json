@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "chipchonkmod:blue_oak_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "   ",
+    "PSP",
+    "PSP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chipchonkmod:blue_oak_fence_gate"
+  }
+}

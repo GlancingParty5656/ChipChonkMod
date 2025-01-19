@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chipchonkmod:steel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "chipchonkmod:steel_ingot"
+  }
+}

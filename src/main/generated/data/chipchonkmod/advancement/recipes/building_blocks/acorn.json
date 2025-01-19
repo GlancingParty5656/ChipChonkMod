@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acorn_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "chipchonkmod:acorn_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:acorn"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_acorn_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:acorn"
+    ]
+  }
+}

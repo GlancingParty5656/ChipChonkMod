@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chipchonkmod:steel_ingot"
+    },
+    {
+      "item": "chipchonkmod:cut_sapphire"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chipchonkmod:sapphire_infused_steel"
+  }
+}

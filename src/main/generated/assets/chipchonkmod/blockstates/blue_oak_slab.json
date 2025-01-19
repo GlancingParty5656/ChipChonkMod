@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "chipchonkmod:block/blue_oak_slab"
+    },
+    "type=double": {
+      "model": "chipchonkmod:block/blue_oak_planks"
+    },
+    "type=top": {
+      "model": "chipchonkmod:block/blue_oak_slab_top"
+    }
+  }
+}

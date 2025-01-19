@@ -1,0 +1,16 @@
+{
+  "thick_of_it": {
+    "sounds": [
+      {
+        "name": "chipchonkmod:thick_of_it",
+        "stream": true
+      }
+    ]
+  },
+  "gunshot": {
+   "subtitle": "Gunshot",
+    "sounds": [
+      "chipchonkmod:gunshot"
+    ]
+  }
+}

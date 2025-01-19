@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "chipchonkmod:block/blue_oak_sapling"
+  }
+}
