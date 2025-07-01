@@ -1,14 +1,14 @@
 package net.colby.chipchonkmod.item;
 
 import net.colby.chipchonkmod.ChipChonkMod;
+import net.colby.chipchonkmod.block.ModBlocks;
 import net.colby.chipchonkmod.entity.ModEntities;
-import net.colby.chipchonkmod.item.custom.AcornItem;
-import net.colby.chipchonkmod.item.custom.BulletItem;
-import net.colby.chipchonkmod.item.custom.GlockItem;
-import net.colby.chipchonkmod.item.custom.RifleItem;
+import net.colby.chipchonkmod.item.custom.*;
 import net.colby.chipchonkmod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Blocks;
+import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -52,7 +52,7 @@ public class ModItems {
 
     public static final Item QUADRUPLE_COMPRESSED_SAPPHIRE_INFUSED_STEEL_BLOCK_PRESSURE_PLATE_ON_A_STICK = registerItem("quadruple_compressed_sapphire_infused_steel_block_pressure_plate_on_a_stick",
             new SwordItem(ModToolMaterial.SAPPHIRE_INFUSED_STEEL, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(
-                    ModToolMaterial.SAPPHIRE_INFUSED_STEEL, 15, -2f))));
+                    ModToolMaterial.SAPPHIRE_INFUSED_STEEL, 0, -2f))));
 
     public static final Item THICK_OF_IT_MUSIC_DISC = registerItem("thick_of_it_music_disc",
             new Item(new Item.Settings().jukeboxPlayable(ModSounds.THICK_OF_IT_KEY).maxCount(1)));
@@ -60,6 +60,20 @@ public class ModItems {
     public static final Item GLOCK = registerItem("glock", new GlockItem(new Item.Settings().maxCount(1)));
     public static final Item BULLET = registerItem("bullet", new BulletItem(new Item.Settings()));
     public static final Item RIFLE = registerItem("rifle", new RifleItem(new Item.Settings().maxCount(1)));
+    public static final Item SNIPER = registerItem("sniper", new SniperItem(new Item.Settings().maxCount(1)));
+    public static final Item SHOTGUN = registerItem("shotgun", new ShotgunItem(new Item.Settings().maxCount(1)));
+    public static final Item EXPLOSIVE_GLOCK = registerItem("explosive_glock", new ExplosiveGlockItem(new Item.Settings().maxCount(1)));
+    public static final Item BLOCKY_SHOTGUN = registerItem("blocky_shotgun", new BlockyShotgunItem(new Item.Settings().maxCount(1)));
+
+    public static final Item GRENADE = registerItem("grenade", new GrenadeItem(new Item.Settings().maxCount(16)));
+
+    public static final Item PORTAL_GUN = registerItem("portal_gun", new PortalGunItem(new Item.Settings().maxCount(1)));
+
+    public static final Item BLUEBERRY = registerItem("blueberry",
+            new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH, (new Item.Settings()).food(ModFoodComponents.BLUEBERRY)));
+
+    //public static final Item BLUEBERRY = registerItem("blueberry",
+    //        new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY)));
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(ChipChonkMod.MOD_ID, name), item);

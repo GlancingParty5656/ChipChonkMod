@@ -25,6 +25,7 @@ import net.minecraft.util.math.VerticalSurfaceType;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.IntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.util.math.intprovider.WeightedListIntProvider;
 import net.minecraft.util.math.random.RandomSeed;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
@@ -32,6 +33,9 @@ import net.minecraft.world.gen.foliage.*;
 import net.minecraft.world.gen.root.RootPlacer;
 import net.minecraft.world.gen.stateprovider.*;
 import net.minecraft.world.gen.treedecorator.TreeDecorator;
+import net.minecraft.world.gen.trunk.CherryTrunkPlacer;
+import net.minecraft.world.gen.trunk.DarkOakTrunkPlacer;
+import net.minecraft.world.gen.trunk.MegaJungleTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import javax.sound.midi.MidiChannel;
@@ -41,9 +45,16 @@ import static net.minecraft.world.gen.feature.VegetationConfiguredFeatures.PATCH
 import static net.minecraft.world.gen.feature.VegetationPlacedFeatures.PATCH_GRASS_NORMAL;
 
 public class ModConfiguredFeatures {
+
     public static final RegistryKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_OAK_KEY = registerKey("blue_oak");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MEGA_BLUE_OAK_KEY = registerKey("mega_blue_oak");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> THICK_BLUE_OAK_KEY = registerKey("thick_blue_oak");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> TALL_BLUE_OAK_KEY = registerKey("tall_blue_oak");
 
     //public static final RegistryKey<ConfiguredFeature<?, ?>> CELESTIAL_MOSS_KEY = registerKey("celestial_moss");
 
@@ -77,6 +88,52 @@ public class ModConfiguredFeatures {
                 //BlockStateProvider.of(ModBlocks.BLUE_OAK_LEAVES),
                 TwoLeavesBlueOakFeature.TWO_LEAVES_BLUE_OAK_FEATURE,
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3), // radius, offset, height //Change back to 2, 0, 3
+
+                new TwoLayersFeatureSize(0, 0, 0) // limit, lowerSize, upperSize
+        ).build());
+
+        register(context, MEGA_BLUE_OAK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                SimpleBlockStateProvider.of(ModBlocks.BLUE_OAK_LOG), // log
+                new CherryTrunkPlacer(
+                        7, // baseHeight
+                        1, // firstRandomHeight
+                        0, // secondRandomHeight
+                        UniformIntProvider.create(1, 3),
+                        UniformIntProvider.create(2, 3), // branchHorizontalLength
+                        UniformIntProvider.create(-4, -3), // branchStartOffsetFromTop (convert -4 to 4, -3 to 3)
+                        UniformIntProvider.create(-1, 0)  // branchEndOffsetFromTop (convert -1 to 1, 0 to 0)
+                ),
+
+                TwoLeavesBlueOakFeature.TWO_LEAVES_BLUE_OAK_FEATURE,
+                new CherryFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(0), ConstantIntProvider.create(5), 0.25f, 0.25f, 0.16666667f, 0.33333334f), // radius, offset, height //Change back to 2, 0, 3
+
+                new TwoLayersFeatureSize(0, 0, 0) // limit, lowerSize, upperSize
+        ).build());
+
+        register(context, THICK_BLUE_OAK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                SimpleBlockStateProvider.of(ModBlocks.BLUE_OAK_LOG), // log
+                new DarkOakTrunkPlacer(
+                        5, // baseHeight
+                        2, // firstRandomHeight
+                        1 // secondRandomHeight
+                ),
+
+                TwoLeavesBlueOakFeature.TWO_LEAVES_BLUE_OAK_FEATURE,
+                new DarkOakFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0)),
+
+                new TwoLayersFeatureSize(0, 0, 0) // limit, lowerSize, upperSize
+        ).build());
+
+        register(context, TALL_BLUE_OAK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                SimpleBlockStateProvider.of(ModBlocks.BLUE_OAK_LOG), // log
+                new MegaJungleTrunkPlacer(
+                        10, // baseHeight
+                        5, // firstRandomHeight
+                        3 // secondRandomHeight
+                ),
+
+                TwoLeavesBlueOakFeature.TWO_LEAVES_BLUE_OAK_FEATURE,
+                new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 2),
 
                 new TwoLayersFeatureSize(0, 0, 0) // limit, lowerSize, upperSize
         ).build());

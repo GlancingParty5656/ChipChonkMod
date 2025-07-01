@@ -26,6 +26,12 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> BLUE_OAK_FOREST_PLACED_KEY = registerKey("blue_oak_forest_placed");
 
+    public static final RegistryKey<PlacedFeature> MEGA_BLUE_OAK_FOREST_PLACED_KEY = registerKey("mega_blue_oak_forest_placed");
+
+    public static final RegistryKey<PlacedFeature> THICK_BLUE_OAK_FOREST_PLACED_KEY = registerKey("thick_blue_oak_forest_placed");
+
+    public static final RegistryKey<PlacedFeature> TALL_BLUE_OAK_FOREST_PLACED_KEY = registerKey("tall_blue_oak_forest_placed");
+
     //public static final RegistryKey<PlacedFeature> CELESTIAL_MOSS_PLACED_KEY = registerKey("celestial_moss_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -38,7 +44,19 @@ public class ModPlacedFeatures {
 
         register(context, BLUE_OAK_FOREST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLUE_OAK_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(3, 0.1f, 0), Blocks.VOID_AIR));
+                        PlacedFeatures.createCountExtraModifier(5, 1f, 0), ModBlocks.BLUE_OAK_SAPLING));
+
+        register(context, MEGA_BLUE_OAK_FOREST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MEGA_BLUE_OAK_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(5, 1f, 0), ModBlocks.BLUE_OAK_SAPLING));
+
+        register(context, THICK_BLUE_OAK_FOREST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.THICK_BLUE_OAK_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(5, 1f, 0), ModBlocks.BLUE_OAK_SAPLING));
+
+        register(context, TALL_BLUE_OAK_FOREST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TALL_BLUE_OAK_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(5, 1f, 0), ModBlocks.BLUE_OAK_SAPLING));
 
         register(context, BLUE_OAK_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLUE_OAK_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(

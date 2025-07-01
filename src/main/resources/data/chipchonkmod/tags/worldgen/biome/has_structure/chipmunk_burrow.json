@@ -1,0 +1,10 @@
+{
+  "replace": false,
+
+  "values": [
+    "chipchonkmod:acorn_forest",
+    "chipchonkmod:acorn_plains",
+    "chipchonkmod:windswept_acorn_forest",
+    "chipchonkmod:windswept_acorn_plains"
+  ]
+}

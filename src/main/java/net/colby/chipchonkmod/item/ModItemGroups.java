@@ -46,6 +46,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ACORN_LAYER_BLOCK);
                         entries.add(ModItems.THICK_OF_IT_MUSIC_DISC);
 
+                        entries.add(ModItems.BLUEBERRY);
+
                     }).build());
 
     public static final ItemGroup CHIPCHONKMOD_SAPPHIRE_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -81,6 +83,11 @@ public class ModItemGroups {
                         entries.add(ModItems.BULLET);
                         entries.add(ModBlocks.STEEL_BLOCK);
                         entries.add(ModItems.RIFLE);
+                        entries.add(ModItems.SNIPER);
+                        entries.add(ModItems.SHOTGUN);
+                        entries.add(ModItems.EXPLOSIVE_GLOCK);
+                        entries.add(ModItems.GRENADE);
+                        entries.add(ModItems.BLOCKY_SHOTGUN);
 
                     }).build());
 
@@ -95,6 +102,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ASTRAL_NYLIUM);
                         entries.add(ModBlocks.ASTRAL_MOSS);
                         entries.add(ModBlocks.ASTRAL_MOSS_CARPET);
+
+                    }).build());
+
+    public static final ItemGroup CHIPCHONKMOD_PORTAL_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(ChipChonkMod.MOD_ID, "chipchonkmod_portal"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.chipchonkmod_end"))
+                    .icon(() -> new ItemStack(ModBlocks.PORTAL_BLOCK)).entries((displayContext, entries) -> {
+
+                        entries.add(ModBlocks.PORTAL_BLOCK);
+                        entries.add(ModItems.PORTAL_GUN);
 
                     }).build());
 

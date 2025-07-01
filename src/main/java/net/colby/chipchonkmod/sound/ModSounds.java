@@ -15,6 +15,7 @@ public class ModSounds {
     public static final RegistryKey<JukeboxSong> THICK_OF_IT_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(ChipChonkMod.MOD_ID, "thick_of_it"));
 
     public static final SoundEvent GUNSHOT = registerSoundEvent("gunshot");
+    public static final SoundEvent BULLET_LAND = registerSoundEvent("bullet_land");
 
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = Identifier.of(ChipChonkMod.MOD_ID, name);

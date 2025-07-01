@@ -1,6 +1,8 @@
 package net.colby.chipchonkmod.block;
 
 import net.colby.chipchonkmod.ChipChonkMod;
+import net.colby.chipchonkmod.block.custom.BlueberryBushBlock;
+import net.colby.chipchonkmod.block.custom.PortalBlock;
 import net.colby.chipchonkmod.item.ModItems;
 import net.colby.chipchonkmod.world.ModConfiguredFeatures;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -45,11 +47,11 @@ public class ModBlocks {
             new SaplingBlock(
                     new SaplingGenerator(
                             ChipChonkMod.MOD_ID.toString(),
-                            0.1f,
-                            Optional.empty(),
-                            Optional.empty(),
+                            0.5f,
+                            Optional.of(ModConfiguredFeatures.THICK_BLUE_OAK_KEY),
+                            Optional.of(ModConfiguredFeatures.TALL_BLUE_OAK_KEY),
                             Optional.of(ModConfiguredFeatures.BLUE_OAK_KEY),
-                            Optional.empty(),
+                            Optional.of(ModConfiguredFeatures.MEGA_BLUE_OAK_KEY),
                             Optional.empty(),
                             Optional.empty()
                     ),
@@ -126,6 +128,12 @@ public class ModBlocks {
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(5).sounds(BlockSoundGroup.NETHERITE)));
 
+    public static final Block PORTAL_BLOCK = registerBlock("portal_block",
+            new PortalBlock(FabricBlockSettings.copyOf(Blocks.GLASS).noCollision().nonOpaque()));
+
+    public static final Block BLUEBERRY_BUSH = registerBlockWithoutBlockItem("blueberry_bush",
+            new BlueberryBushBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(ChipChonkMod.MOD_ID, name), block);
@@ -138,6 +146,10 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         ChipChonkMod.LOGGER.info("Registering ModBlocks for " + ChipChonkMod.MOD_ID);
+    }
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(ChipChonkMod.MOD_ID, name), block);
     }
 
     public static <T extends Block> T register(String name, T block) {

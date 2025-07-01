@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
     SAPPHIRE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 1560, 8.0f, 3.5f, 25, () -> Ingredient.ofItems(ModItems.SAPPHIRE)),
-    SAPPHIRE_INFUSED_STEEL(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 1560, 8.0f, 3.5f, 25, () -> Ingredient.ofItems(ModItems.SAPPHIRE_INFUSED_STEEL));
+    SAPPHIRE_INFUSED_STEEL(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 1560, 8.0f, 56419f, 25, () -> Ingredient.ofItems(ModItems.SAPPHIRE_INFUSED_STEEL));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

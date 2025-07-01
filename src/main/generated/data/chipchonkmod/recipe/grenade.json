@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "minecraft:end_crystal"
+    },
+    "S": {
+      "item": "chipchonkmod:steel_ingot"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SCS",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chipchonkmod:grenade"
+  }
+}

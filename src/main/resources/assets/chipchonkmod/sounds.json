@@ -12,5 +12,11 @@
     "sounds": [
       "chipchonkmod:gunshot"
     ]
+  },
+  "bullet_land": {
+    "subtitle": "Bullet Hit",
+    "sounds": [
+      "chipchonkmod:bullet_land"
+    ]
   }
 }

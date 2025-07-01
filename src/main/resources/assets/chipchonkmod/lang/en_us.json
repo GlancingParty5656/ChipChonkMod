@@ -65,8 +65,20 @@
   "item.chipchonkmod.bullet": "Bullet",
   "block.chipchonkmod.steel_block": "Steel Block",
   "item.chipchonkmod.rifle": "Rifle",
+  "item.chipchonkmod.sniper": "Sniper",
+  "item.chipchonkmod.shotgun": "Shotgun",
+  "item.chipchonkmod.explosive_glock": "Explosive Glock",
+  "item.chipchonkmod.blocky_shotgun": "Blocky Shotgun",
 
-  "itemgroup.chipchonkmod_acorn": "ChipChonk Mod Acorn Additions",
-  "itemgroup.chipchonkmod_sapphire": "ChipChonk Mod Sapphire Additions",
-  "itemgroup.chipchonkmod_end": "ChipChonk Mod End Additions"
+  "item.chipchonkmod.grenade": "Grenade",
+
+  "block.chipchonkmod.portal_block": "Portal Block",
+  "item.chipchonkmod.portal_gun": "Portal Gun",
+
+  "item.chipchonkmod.blueberry": "Blueberry",
+
+  "itemgroup.chipchonkmod_acorn": "ChipChonkMod Acorn Additions",
+  "itemgroup.chipchonkmod_sapphire": "ChipChonkMod Sapphire Additions",
+  "itemgroup.chipchonkmod_end": "ChipChonkMod End Additions",
+  "itemgroup.chipchonkmod_portal": "ChipChonkMod Portal Additions"
 }

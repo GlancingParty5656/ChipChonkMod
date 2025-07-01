@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "chipchonkmod:shotgun"
+    },
+    {
+      "item": "minecraft:bamboo_mosaic_slab"
+    },
+    {
+      "item": "minecraft:activator_rail"
+    },
+    {
+      "item": "minecraft:calibrated_sculk_sensor"
+    },
+    {
+      "item": "minecraft:magenta_glazed_terracotta"
+    },
+    {
+      "item": "minecraft:cracked_polished_blackstone_bricks"
+    },
+    {
+      "item": "minecraft:waxed_weathered_cut_copper_stairs"
+    },
+    {
+      "item": "chipchonkmod:sapphire_infused_steel_block"
+    },
+    {
+      "item": "chipchonkmod:acorn_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chipchonkmod:blocky_shotgun"
+  }
+}

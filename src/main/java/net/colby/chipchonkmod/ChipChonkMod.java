@@ -13,16 +13,21 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.TheEndBiomes;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerWorldEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.fabricmc.fabric.impl.biome.TheEndBiomeData;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeKeys;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import terrablender.api.EndBiomeRegistry;
+
+import java.awt.*;
 
 public class ChipChonkMod implements ModInitializer {
 	public static final String MOD_ID = "chipchonkmod";
@@ -33,7 +38,6 @@ public class ChipChonkMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
-
 		ModWorldGeneration.generateModWorldGen();
 
 		StrippableBlockRegistry.register(ModBlocks.BLUE_OAK_LOG, ModBlocks.STRIPPED_BLUE_OAK_LOG);
@@ -61,6 +65,15 @@ public class ChipChonkMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.MEEPLES, MeeplesEntity.createMeeplesAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.CHIPMUNK, ChipmunkEntity.createChipmunkAttributes());
 
+		CompostingChanceRegistry.INSTANCE.add(ModItems.ACORN, 0.25f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.BLUEBERRY, 0.15f);
+
+		CustomPortalBuilder.beginPortal()
+				.frameBlock(ModBlocks.ACORN_BLOCK)
+				.lightWithItem(ModItems.ACORN)
+				.destDimID(Identifier.of(ChipChonkMod.MOD_ID, "chipmunkdim"))
+				.tintColor(0, 100, 225)
+				.registerPortal();
 
 		//RegistryKey<Biome> celestialForestKey = ModBiomes.CELESTIAL_FOREST;
 		//TheEndBiomes.addHighlandsBiome(celestialForestKey, 3.0d);

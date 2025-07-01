@@ -2,18 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "C": {
-      "item": "minecraft:copper_ingot"
-    },
-    "S": {
-      "item": "chipchonkmod:cut_sapphire"
-    },
     "T": {
       "item": "chipchonkmod:steel_block"
     }
   },
   "pattern": [
-    "SCC",
+    "   ",
     "TTT",
     "  T"
   ],

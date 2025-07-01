@@ -2,6 +2,7 @@ package net.colby.chipchonkmod.datagen;
 
 import net.colby.chipchonkmod.block.ModBlocks;
 import net.colby.chipchonkmod.item.ModItems;
+import net.colby.chipchonkmod.item.custom.GlockItem;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;
@@ -279,14 +280,40 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerCarpetRecipe(exporter, ModBlocks.ASTRAL_MOSS_CARPET, ModBlocks.ASTRAL_MOSS);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GLOCK, 1)
-                .pattern("SCC")
+                .pattern("   ")
                 .pattern("TTT")
                 .pattern("  T")
-                .input('S', ModItems.CUT_SAPPHIRE)
-                .input('C', Items.COPPER_INGOT)
                 .input('T', ModBlocks.STEEL_BLOCK)
                 .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.GLOCK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RIFLE, 1)
+                .pattern("SCC")
+                .pattern("TTT")
+                .pattern("  T")
+                .input('T', ModBlocks.STEEL_BLOCK)
+                .input('S', ModItems.CUT_SAPPHIRE)
+                .input('C', Items.COPPER_INGOT)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.RIFLE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SNIPER, 1)
+                .pattern("SCC")
+                .pattern("TTT")
+                .pattern(" TT")
+                .input('T', ModBlocks.STEEL_BLOCK)
+                .input('S', ModItems.CUT_SAPPHIRE)
+                .input('C', Items.COPPER_INGOT)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.SNIPER)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SHOTGUN, 1)
+                .pattern("   ")
+                .pattern("TTT")
+                .pattern(" TT")
+                .input('T', ModBlocks.STEEL_BLOCK)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.SHOTGUN)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BULLET, 4)
                         .pattern(" C ")
@@ -306,6 +333,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModItems.STEEL_INGOT, 9)
                 .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
                 .offerTo(exporter, "steel_block_from_steel_ingot");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.EXPLOSIVE_GLOCK, 1)
+                .input(ModItems.GLOCK, 1)
+                .input(Items.TNT, 1)
+                .input(Items.END_CRYSTAL, 1)
+                .input(Items.TNT_MINECART, 1)
+                .input(Items.FIREWORK_ROCKET, 1)
+                .criterion(hasItem(ModItems.GLOCK), conditionsFromItem(ModItems.GLOCK))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GRENADE, 1)
+                .pattern("SSS")
+                .pattern("SCS")
+                .pattern("SSS")
+                .input('C', Items.END_CRYSTAL)
+                .input('S', ModItems.STEEL_INGOT)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.GRENADE)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BLOCKY_SHOTGUN, 1)
+                .input(ModItems.SHOTGUN, 1)
+                .input(Blocks.BAMBOO_MOSAIC_SLAB, 1)
+                .input(Blocks.ACTIVATOR_RAIL, 1)
+                .input(Blocks.CALIBRATED_SCULK_SENSOR, 1)
+                .input(Blocks.MAGENTA_GLAZED_TERRACOTTA, 1)
+                .input(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, 1)
+                .input(Blocks.WAXED_WEATHERED_CUT_COPPER_STAIRS, 1)
+                .input(ModBlocks.SAPPHIRE_INFUSED_STEEL_BLOCK, 1)
+                .input(ModBlocks.ACORN_BLOCK, 1)
+                .criterion(hasItem(ModItems.SHOTGUN), conditionsFromItem(ModItems.SHOTGUN))
+                .offerTo(exporter);
 
     }
 }

@@ -1,7 +1,7 @@
-// 1.21	2024-12-16T19:47:48.5985481	ChipChonk Mod/Tags for minecraft:block
+// 1.21.1	2025-06-29T19:34:59.0550255	ChipChonk Mod/Tags for minecraft:block
 b8d7ecd2c3868bb9b7ca867798614cd396ca6e45 data\minecraft\tags\block\mineable\pickaxe.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\fabric\tags\block\needs_tool_level_4.json
 19f6d1cb7708cf77e89f414dcc7a26159bc91f37 data\minecraft\tags\block\logs_that_burn.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\fabric\tags\block\needs_tool_level_4.json
 6638d8ee590fb4cb7a2e26770fc5ae537eed2522 data\minecraft\tags\block\walls.json
 57ba19f800e0897aa037ebaf9a4f9791b3b7cf4e data\minecraft\tags\block\fence_gates.json
 c3bf552d920eb5ff965dab78ccf5df4934dd634b data\minecraft\tags\block\needs_diamond_tool.json

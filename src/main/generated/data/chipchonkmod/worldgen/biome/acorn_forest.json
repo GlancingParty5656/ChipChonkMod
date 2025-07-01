@@ -10,7 +10,7 @@
   "effects": {
     "fog_color": 12638697,
     "foliage_color": 5877296,
-    "grass_color": 5877296,
+    "grass_color": 7979098,
     "music": {
       "max_delay": 24000,
       "min_delay": 12000,
@@ -75,7 +75,10 @@
       "minecraft:patch_grass_jungle",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
-      "chipchonkmod:blue_oak_forest_placed"
+      "chipchonkmod:blue_oak_forest_placed",
+      "chipchonkmod:mega_blue_oak_forest_placed",
+      "chipchonkmod:thick_blue_oak_forest_placed",
+      "chipchonkmod:tall_blue_oak_forest_placed"
     ],
     [
       "minecraft:freeze_top_layer"

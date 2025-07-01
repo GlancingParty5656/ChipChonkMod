@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "item": "chipchonkmod:steel_block"
+    }
+  },
+  "pattern": [
+    "   ",
+    "TTT",
+    " TT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chipchonkmod:shotgun"
+  }
+}

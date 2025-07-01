@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "chipchonkmod:glock"
+    },
+    {
+      "item": "minecraft:tnt"
+    },
+    {
+      "item": "minecraft:end_crystal"
+    },
+    {
+      "item": "minecraft:tnt_minecart"
+    },
+    {
+      "item": "minecraft:firework_rocket"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chipchonkmod:explosive_glock"
+  }
+}

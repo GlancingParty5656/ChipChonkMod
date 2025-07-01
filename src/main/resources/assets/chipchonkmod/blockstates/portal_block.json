@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "color=blue": { "model": "chipchonkmod:block/portal_block_blue" },
+    "color=orange": { "model": "chipchonkmod:block/portal_block_orange" }
+  }
+}

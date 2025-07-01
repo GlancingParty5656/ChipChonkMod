@@ -1,8 +1,8 @@
 package net.colby.chipchonkmod.world.biome;
 
 import net.colby.chipchonkmod.ChipChonkMod;
+import net.colby.chipchonkmod.world.biome.region.ModOverworldRegion;
 import net.colby.chipchonkmod.world.biome.surface.ModMaterialRules;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;

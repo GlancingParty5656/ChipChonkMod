@@ -21,6 +21,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.*;
 import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.carver.ConfiguredCarvers;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.structure.EndCityStructure;
 
@@ -93,8 +94,8 @@ public class ModBiomes {
                         .waterColor(0x3F76E4)
                         .waterFogColor(329011)
                         .skyColor(12638463)
-                        .grassColor(0xB6DB61)
-                        .foliageColor(0xB6DB61)
+                        .grassColor(0x91BD59)
+                        .foliageColor(0x77AB2F)
                         .fogColor(0xc0d9e9)
                         .music(MusicType.GAME)
                         .build())
@@ -109,17 +110,24 @@ public class ModBiomes {
         DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
 
+        GenerationSettings.LookupBackedBuilder biomeBuilder = new GenerationSettings.LookupBackedBuilder(
+                context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER)
+        );
 
-        GenerationSettings.LookupBackedBuilder biomeBuilder = new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
-                context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
-                globalOverworldGeneration(biomeBuilder);
-                DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-                DefaultBiomeFeatures.addDefaultFlowers(biomeBuilder);
-                DefaultBiomeFeatures.addDefaultGrass(biomeBuilder);
-                DefaultBiomeFeatures.addPlainsTallGrass(biomeBuilder);
-                DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
+        globalOverworldGeneration(biomeBuilder);
+        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
+        DefaultBiomeFeatures.addDefaultFlowers(biomeBuilder);
+        DefaultBiomeFeatures.addDefaultGrass(biomeBuilder);
+        DefaultBiomeFeatures.addPlainsTallGrass(biomeBuilder);
+        DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BLUE_OAK_PLACED_KEY);
+
+        biomeBuilder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CAVE);
+        biomeBuilder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CANYON);
+        biomeBuilder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CAVE_EXTRA_UNDERGROUND);
+        biomeBuilder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.NETHER_CAVE);
 
         return new Biome.Builder()
                 .precipitation(true)
@@ -131,8 +139,8 @@ public class ModBiomes {
                         .waterColor(0x3F76E4)
                         .waterFogColor(329011)
                         .skyColor(12638463)
-                        .grassColor(0xB6DB61)
-                        .foliageColor(0xB6DB61)
+                        .grassColor(0x91BD59)
+                        .foliageColor(0x77AB2F)
                         .fogColor(0xc0d9e9)
                         .music(MusicType.GAME)
                         .build())
@@ -147,7 +155,6 @@ public class ModBiomes {
         DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
 
-
         GenerationSettings.LookupBackedBuilder biomeBuilder = new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                 context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
                 globalOverworldGeneration(biomeBuilder);
@@ -157,6 +164,9 @@ public class ModBiomes {
                 DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BLUE_OAK_FOREST_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.MEGA_BLUE_OAK_FOREST_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.THICK_BLUE_OAK_FOREST_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.TALL_BLUE_OAK_FOREST_PLACED_KEY);
 
         return new Biome.Builder()
                 .precipitation(true)
@@ -168,7 +178,7 @@ public class ModBiomes {
                         .waterColor(0x3F76E4)
                         .waterFogColor(329011)
                         .skyColor(12638463)
-                        .grassColor(0x59AE30)
+                        .grassColor(0x79C05A)
                         .foliageColor(0x59AE30)
                         .fogColor(0xc0d9e9)
                         .music(MusicType.GAME)
@@ -194,6 +204,14 @@ public class ModBiomes {
                 DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BLUE_OAK_FOREST_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.MEGA_BLUE_OAK_FOREST_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.THICK_BLUE_OAK_FOREST_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.TALL_BLUE_OAK_FOREST_PLACED_KEY);
+
+        biomeBuilder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CAVE);
+        biomeBuilder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CANYON);
+        biomeBuilder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CAVE_EXTRA_UNDERGROUND);
+        biomeBuilder.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.NETHER_CAVE);
 
         return new Biome.Builder()
                 .precipitation(true)
@@ -205,7 +223,7 @@ public class ModBiomes {
                         .waterColor(0x3F76E4)
                         .waterFogColor(329011)
                         .skyColor(12638463)
-                        .grassColor(0x59AE30)
+                        .grassColor(0x79C05A)
                         .foliageColor(0x59AE30)
                         .fogColor(0xc0d9e9)
                         .music(MusicType.GAME)

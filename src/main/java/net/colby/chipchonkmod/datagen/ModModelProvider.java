@@ -1,6 +1,7 @@
 package net.colby.chipchonkmod.datagen;
 
 import net.colby.chipchonkmod.block.ModBlocks;
+import net.colby.chipchonkmod.block.custom.BlueberryBushBlock;
 import net.colby.chipchonkmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -17,7 +18,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ACORN_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ACORN_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
@@ -25,7 +25,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.BLUE_OAK_LOG).log(ModBlocks.BLUE_OAK_LOG).wood(ModBlocks.BLUE_OAK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_BLUE_OAK_LOG).log(ModBlocks.STRIPPED_BLUE_OAK_LOG).wood(ModBlocks.STRIPPED_BLUE_OAK_WOOD);
         BlockStateModelGenerator.BlockTexturePool blueOakPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLUE_OAK_PLANKS);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_OAK_LEAVES);
+        blockStateModelGenerator.registerSingleton(ModBlocks.BLUE_OAK_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCross(ModBlocks.BLUE_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blueOakPool.stairs(ModBlocks.BLUE_OAK_STAIRS);
@@ -57,7 +57,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STEEL_BLOCK);
 
+        blockStateModelGenerator.registerSingleton(ModBlocks.ACORN_LEAVES, TexturedModel.LEAVES);
 
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BLUEBERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                BlueberryBushBlock.AGE, 0, 1, 2, 3);
     }
 
     @Override
@@ -87,6 +90,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.THICK_OF_IT_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.BULLET, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.GRENADE, Models.GENERATED);
 
     }
 }

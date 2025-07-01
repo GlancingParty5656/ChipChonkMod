@@ -1,10 +1,7 @@
 package net.colby.chipchonkmod.entity;
 
 import net.colby.chipchonkmod.ChipChonkMod;
-import net.colby.chipchonkmod.entity.custom.AcornProjectileEntity;
-import net.colby.chipchonkmod.entity.custom.BulletEntity;
-import net.colby.chipchonkmod.entity.custom.ChipmunkEntity;
-import net.colby.chipchonkmod.entity.custom.MeeplesEntity;
+import net.colby.chipchonkmod.entity.custom.*;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.client.render.entity.ArrowEntityRenderer;
 import net.minecraft.entity.EntityDimensions;
@@ -35,5 +32,10 @@ public class ModEntities {
             Identifier.of(ChipChonkMod.MOD_ID, "chipmunk"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, ChipmunkEntity::new)
                     .dimensions(EntityDimensions.fixed(0.3f, 0.3f)).build());
+
+    public static final EntityType<GrenadeProjectileEntity> GRENADE_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(ChipChonkMod.MOD_ID, "grenade_projectile"),
+            FabricEntityTypeBuilder.<GrenadeProjectileEntity>create(SpawnGroup.MISC, GrenadeProjectileEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
 
 }
