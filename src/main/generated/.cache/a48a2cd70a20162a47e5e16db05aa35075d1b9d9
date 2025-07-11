@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-29T19:34:59.0540239	ChipChonk Mod/Block Loot Tables
+// 1.21.1	2025-07-11T09:43:13.8705626	ChipChonk Mod/Block Loot Tables
 24411568795d16346302c972c0e9db2b037ee7c9 data\chipchonkmod\loot_table\blocks\blueberry_bush.json
 af130029bb32606c18d706de47e2de7f6afd4be5 data\chipchonkmod\loot_table\blocks\blue_oak_door.json
 0904aaf2a0f037ded72e41e9f2ba75cc2b43e83f data\chipchonkmod\loot_table\blocks\quadruple_compressed_sapphire_infused_steel_block_pressure_plate.json
@@ -18,6 +18,7 @@ bd595c6439f8e42da28b1c271010d0579fdc1281 data\chipchonkmod\loot_table\blocks\ste
 cd9004835a47981f038919832d4304572c4b7c2b data\chipchonkmod\loot_table\blocks\celestial_nylium.json
 fd32ff811722b57f16bc70e326484ad7d8e7f1f7 data\chipchonkmod\loot_table\blocks\blue_oak_fence.json
 455eda7da4cfc63fe1f6a064cf444f818b78b2b1 data\chipchonkmod\loot_table\blocks\compressed_sapphire_infused_steel_block.json
+9db91f055f562aa8e6463f43123f353f38f04b1d data\chipchonkmod\loot_table\blocks\heleniums.json
 b1ed0d8587d02b7261c2be5a4e8fc03018c4e74b data\chipchonkmod\loot_table\blocks\blue_oak_fence_gate.json
 50b9dc6a9e1e67ead6094bb1100b128377de2c7a data\chipchonkmod\loot_table\blocks\blue_oak_trapdoor.json
 ada8a563d9a1f842f61d87cd5b415a28aabff694 data\chipchonkmod\loot_table\blocks\sapphire_block.json
@@ -34,4 +35,5 @@ caee77982b5c6c67eb6254efb047815760579440 data\chipchonkmod\loot_table\blocks\sap
 1198e1cd72df1828f2dbb201a21d51c2500f9b7b data\chipchonkmod\loot_table\blocks\acorn_leaves.json
 507c1380cc92436e7e2eb2c7625c599d8eb6fc2a data\chipchonkmod\loot_table\blocks\blue_oak_sapling.json
 071ffd280997328d49cd995f7c2efb7c1896b936 data\chipchonkmod\loot_table\blocks\stripped_blue_oak_wood.json
+9a303df1473da7478bf2f76fab359ab78b15fce1 data\chipchonkmod\loot_table\blocks\hydrangea.json
 4cdce99dc7f294f05f6626d0e12d5de5281b9895 data\chipchonkmod\loot_table\blocks\blue_oak_log.json

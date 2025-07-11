@@ -24,11 +24,11 @@ public class ModBlocks {
     public static final Block ACORN_LEAVES = registerBlock("acorn_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
     public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).mapColor(MapColor.BLUE)));
     public static final Block SAPPHIRE_ORE = registerBlock("sapphire_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE).mapColor(MapColor.LAPIS_BLUE)));
     public static final Block DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_EMERALD_ORE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_EMERALD_ORE).mapColor(MapColor.LAPIS_BLUE)));
 
     public static final Block BLUE_OAK_LOG = registerBlock("blue_oak_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
@@ -93,46 +93,51 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).burnable().nonOpaque()));
 
     public static final Block ACORN_LAYER = registerBlock("acorn_layer",
-            new CarpetBlock(FabricBlockSettings.copyOf(Blocks.MOSS_CARPET).nonOpaque().collidable(false)));
+            new CarpetBlock(FabricBlockSettings.copyOf(Blocks.MOSS_CARPET).nonOpaque().collidable(false).mapColor(MapColor.DIRT_BROWN)));
     public static final Block ACORN_LAYER_BLOCK = registerBlock("acorn_layer_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.MOSS_BLOCK).nonOpaque()));
+            new Block(FabricBlockSettings.copyOf(Blocks.MOSS_BLOCK).nonOpaque().mapColor(MapColor.DIRT_BROWN)));
 
     public static final Block SAPPHIRE_INFUSED_STEEL_BLOCK = registerBlock("sapphire_infused_steel_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(5)));
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(5).mapColor(MapColor.BLUE)));
     public static final Block COMPRESSED_SAPPHIRE_INFUSED_STEEL_BLOCK = registerBlock("compressed_sapphire_infused_steel_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(6)));
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(6).mapColor(MapColor.BLUE)));
     public static final Block DOUBLE_COMPRESSED_SAPPHIRE_INFUSED_STEEL_BLOCK = registerBlock("double_compressed_sapphire_infused_steel_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(7)));
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(7).mapColor(MapColor.BLUE)));
     public static final Block TRIPLE_COMPRESSED_SAPPHIRE_INFUSED_STEEL_BLOCK = registerBlock("triple_compressed_sapphire_infused_steel_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(8)));
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(8).mapColor(MapColor.BLUE)));
     public static final Block QUADRUPLE_COMPRESSED_SAPPHIRE_INFUSED_STEEL_BLOCK = registerBlock("quadruple_compressed_sapphire_infused_steel_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(9)));
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(9).mapColor(MapColor.BLUE)));
 
     public static final Block QUADRUPLE_COMPRESSED_SAPPHIRE_INFUSED_STEEL_BLOCK_PRESSURE_PLATE = registerBlock("quadruple_compressed_sapphire_infused_steel_block_pressure_plate",
-            new PressurePlateBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE).strength(9).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new PressurePlateBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE).strength(9).sounds(BlockSoundGroup.AMETHYST_BLOCK).mapColor(MapColor.BLUE)));
 
     public static final Block CELESTIAL_NYLIUM = registerBlock("celestial_nylium",
-            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).mapColor(MapColor.CYAN)));
     public static final Block CELESTIAL_MOSS = registerBlock("celestial_moss",
-            new Block(FabricBlockSettings.copyOf(Blocks.MOSS_BLOCK)));
+            new Block(FabricBlockSettings.copyOf(Blocks.MOSS_BLOCK).mapColor(MapColor.CYAN)));
     public static final Block CELESTIAL_MOSS_CARPET = registerBlock("celestial_moss_carpet",
-            new CarpetBlock(FabricBlockSettings.copyOf(Blocks.MOSS_CARPET)));
+            new CarpetBlock(FabricBlockSettings.copyOf(Blocks.MOSS_CARPET).mapColor(MapColor.CYAN)));
 
     public static final Block ASTRAL_NYLIUM = registerBlock("astral_nylium",
-            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).mapColor(MapColor.MAGENTA)));
     public static final Block ASTRAL_MOSS = registerBlock("astral_moss",
-            new Block(FabricBlockSettings.copyOf(Blocks.MOSS_BLOCK)));
+            new Block(FabricBlockSettings.copyOf(Blocks.MOSS_BLOCK).mapColor(MapColor.MAGENTA)));
     public static final Block ASTRAL_MOSS_CARPET = registerBlock("astral_moss_carpet",
-            new CarpetBlock(FabricBlockSettings.copyOf(Blocks.MOSS_CARPET)));
+            new CarpetBlock(FabricBlockSettings.copyOf(Blocks.MOSS_CARPET).mapColor(MapColor.MAGENTA)));
 
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(5).sounds(BlockSoundGroup.NETHERITE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(5).sounds(BlockSoundGroup.NETHERITE).mapColor(MapColor.DEEPSLATE_GRAY)));
 
     public static final Block PORTAL_BLOCK = registerBlock("portal_block",
             new PortalBlock(FabricBlockSettings.copyOf(Blocks.GLASS).noCollision().nonOpaque()));
 
     public static final Block BLUEBERRY_BUSH = registerBlockWithoutBlockItem("blueberry_bush",
             new BlueberryBushBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH)));
+
+    public static final Block HYDRANGEA = registerBlock("hydrangea",
+            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH).mapColor(MapColor.WATER_BLUE)));
+    public static final Block HELENIUMS = registerBlock("heleniums",
+            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH).mapColor(MapColor.ORANGE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -1,11 +1,13 @@
 package net.colby.chipchonkmod.datagen;
 
 import net.colby.chipchonkmod.block.ModBlocks;
+//import net.colby.chipchonkmod.block.custom.BlueberryBushBlock;
 import net.colby.chipchonkmod.block.custom.BlueberryBushBlock;
 import net.colby.chipchonkmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.FlowerbedBlock;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.loot.LootPool;
@@ -90,5 +92,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                 ).with(ItemEntry.builder(ModItems.BLUEBERRY))
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 2.0F)))
                                 .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE))))));
+
+        addDrop(ModBlocks.HYDRANGEA, doorDrops(ModBlocks.HYDRANGEA));
+        addDrop(ModBlocks.HELENIUMS, doorDrops(ModBlocks.HELENIUMS));
     }
 }

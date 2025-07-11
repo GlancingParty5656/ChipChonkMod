@@ -51,7 +51,9 @@ public class ChipChonkModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUE_OAK_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ACORN_LAYER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ACORN_LAYER_BLOCK, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUEBERRY_BUSH, RenderLayer.getCutout());
+        //BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUEBERRY_BUSH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HYDRANGEA, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HELENIUMS, RenderLayer.getCutout());
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.MEEPLES, MeeplesModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.MEEPLES, MeeplesRenderer::new);

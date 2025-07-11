@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "chipchonkmod:block/heleniums_bottom"
+    },
+    "half=upper": {
+      "model": "chipchonkmod:block/heleniums_top"
+    }
+  }
+}

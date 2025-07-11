@@ -75,7 +75,16 @@
   "block.chipchonkmod.portal_block": "Portal Block",
   "item.chipchonkmod.portal_gun": "Portal Gun",
 
+  "block.chipchonkmod.hydrangea": "Hydrangea",
+  "block.chipchonkmod.heleniums": "Heleniums",
+
+  "block.chipchonkmod.blueberry_bush": "Blueberry Bush",
   "item.chipchonkmod.blueberry": "Blueberry",
+
+  "item.chipchonkmod.sapphire_helmet": "Sapphire Helmet",
+  "item.chipchonkmod.sapphire_chestplate": "Sapphire Chestplate",
+  "item.chipchonkmod.sapphire_leggings": "Sapphire Leggings",
+  "item.chipchonkmod.sapphire_boots": "Sapphire Boots",
 
   "itemgroup.chipchonkmod_acorn": "ChipChonkMod Acorn Additions",
   "itemgroup.chipchonkmod_sapphire": "ChipChonkMod Sapphire Additions",

@@ -2,11 +2,7 @@ package net.colby.chipchonkmod.world;
 
 import net.colby.chipchonkmod.ChipChonkMod;
 import net.colby.chipchonkmod.block.ModBlocks;
-import net.colby.chipchonkmod.world.biome.ModBiomes;
-import net.minecraft.block.Blocks;
-import net.minecraft.datafixer.fix.BiomeFormatFix;
 import net.minecraft.registry.Registerable;
-import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
@@ -14,8 +10,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.*;
-import org.apache.commons.lang3.ObjectUtils;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -33,6 +27,10 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> TALL_BLUE_OAK_FOREST_PLACED_KEY = registerKey("tall_blue_oak_forest_placed");
 
     //public static final RegistryKey<PlacedFeature> CELESTIAL_MOSS_PLACED_KEY = registerKey("celestial_moss_placed");
+
+    public static final RegistryKey<PlacedFeature> HYDRANGEA_PLACED_KEY = registerKey("hydrangea_placed");
+
+    public static final RegistryKey<PlacedFeature> HELENIUMS_PLACED_KEY = registerKey("heleniums_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -63,6 +61,12 @@ public class ModPlacedFeatures {
                         PlacedFeatures.createCountExtraModifier(0, 0.1f, 1),
                         ModBlocks.BLUE_OAK_SAPLING));
 
+        register(context, HYDRANGEA_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.HYDRANGEA_KEY),
+                RarityFilterPlacementModifier.of(1), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+        register(context, HELENIUMS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.HELENIUMS_KEY),
+                RarityFilterPlacementModifier.of(1), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
         /**register(context, CELESTIAL_MOSS_PLACED_KEY,
                 configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.CELESTIAL_MOSS_KEY), // Use RegistryEntry for the ConfiguredFeature
                 List.of(
@@ -87,4 +91,11 @@ public class ModPlacedFeatures {
                                  List<PlacementModifier> modifiers) {
         context.register(key, new PlacedFeature(configuration, List.copyOf(modifiers)));
     }
+
+    private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<PlacedFeature> context, RegistryKey<PlacedFeature> key,
+                                                                                   RegistryEntry<ConfiguredFeature<?, ?>> configuration,
+                                                                                   PlacementModifier... modifiers) {
+        register(context, key, configuration, List.of(modifiers));
+    }
+
 }

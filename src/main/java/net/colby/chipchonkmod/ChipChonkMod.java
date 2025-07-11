@@ -66,7 +66,9 @@ public class ChipChonkMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.CHIPMUNK, ChipmunkEntity.createChipmunkAttributes());
 
 		CompostingChanceRegistry.INSTANCE.add(ModItems.ACORN, 0.25f);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.BLUEBERRY, 0.15f);
+		CompostingChanceRegistry.INSTANCE.add(ModBlocks.HYDRANGEA, 0.25f);
+		CompostingChanceRegistry.INSTANCE.add(ModBlocks.HELENIUMS, 0.25f);
+		//CompostingChanceRegistry.INSTANCE.add(ModItems.BLUEBERRY, 0.15f);
 
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(ModBlocks.ACORN_BLOCK)

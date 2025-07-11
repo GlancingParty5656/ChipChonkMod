@@ -37,5 +37,27 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.QUADRUPLE_COMPRESSED_SAPPHIRE_INFUSED_STEEL_BLOCK_PRESSURE_PLATE_ON_A_STICK);
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.SAPPHIRE_HOE);
+        getOrCreateTagBuilder(ItemTags.MACE_ENCHANTABLE)
+                .add(ModItems.QUADRUPLE_COMPRESSED_SAPPHIRE_INFUSED_STEEL_BLOCK_PRESSURE_PLATE_ON_A_STICK);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.SAPPHIRE_HELMET)
+                .add(ModItems.SAPPHIRE_CHESTPLATE)
+                .add(ModItems.SAPPHIRE_LEGGINGS)
+                .add(ModItems.SAPPHIRE_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
+                .add(ModItems.SAPPHIRE_HELMET);
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
+                .add(ModItems.SAPPHIRE_CHESTPLATE);
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
+                .add(ModItems.SAPPHIRE_LEGGINGS);
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
+                .add(ModItems.SAPPHIRE_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TALL_FLOWERS)
+                .add(ModBlocks.HYDRANGEA.asItem())
+                .add(ModBlocks.HELENIUMS.asItem());
+
     }
 }

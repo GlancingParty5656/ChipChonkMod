@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chipchonkmod:item/blueberry"
+    "layer0": "chipchonkmod:block/heleniums_top"
   }
 }

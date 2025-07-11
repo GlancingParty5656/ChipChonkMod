@@ -365,5 +365,45 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.SHOTGUN), conditionsFromItem(ModItems.SHOTGUN))
                 .offerTo(exporter);
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.BLUE_DYE, 2)
+                .input(ModBlocks.HYDRANGEA)
+                .criterion(hasItem(ModBlocks.HYDRANGEA), conditionsFromItem(ModBlocks.HYDRANGEA))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.ORANGE_DYE, 2)
+                .input(ModBlocks.HELENIUMS)
+                .criterion(hasItem(ModBlocks.HELENIUMS), conditionsFromItem(ModBlocks.HELENIUMS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_HELMET, 1)
+                .pattern("SSS")
+                .pattern("S S")
+                .input('S', ModItems.SAPPHIRE)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.SAPPHIRE_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_CHESTPLATE, 1)
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .input('S', ModItems.SAPPHIRE)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.SAPPHIRE_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_LEGGINGS, 1)
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .input('S', ModItems.SAPPHIRE)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.SAPPHIRE_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SAPPHIRE_BOOTS, 1)
+                .pattern("S S")
+                .pattern("S S")
+                .input('S', ModItems.SAPPHIRE)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.SAPPHIRE_BOOTS)));
+
     }
 }

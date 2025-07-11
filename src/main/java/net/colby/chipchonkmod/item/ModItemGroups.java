@@ -46,7 +46,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ACORN_LAYER_BLOCK);
                         entries.add(ModItems.THICK_OF_IT_MUSIC_DISC);
 
-                        entries.add(ModItems.BLUEBERRY);
+                        //entries.add(ModItems.BLUEBERRY);
+                        entries.add(ModBlocks.HYDRANGEA);
+                        entries.add(ModBlocks.HELENIUMS);
 
                     }).build());
 
@@ -88,6 +90,11 @@ public class ModItemGroups {
                         entries.add(ModItems.EXPLOSIVE_GLOCK);
                         entries.add(ModItems.GRENADE);
                         entries.add(ModItems.BLOCKY_SHOTGUN);
+
+                        entries.add(ModItems.SAPPHIRE_HELMET);
+                        entries.add(ModItems.SAPPHIRE_CHESTPLATE);
+                        entries.add(ModItems.SAPPHIRE_LEGGINGS);
+                        entries.add(ModItems.SAPPHIRE_BOOTS);
 
                     }).build());
 

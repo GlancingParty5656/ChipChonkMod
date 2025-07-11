@@ -1,12 +1,13 @@
-// 1.21.1	2025-06-29T19:34:59.0550255	ChipChonk Mod/Tags for minecraft:block
-b8d7ecd2c3868bb9b7ca867798614cd396ca6e45 data\minecraft\tags\block\mineable\pickaxe.json
+// 1.21.1	2025-07-11T09:43:13.8715654	ChipChonk Mod/Tags for minecraft:block
 19f6d1cb7708cf77e89f414dcc7a26159bc91f37 data\minecraft\tags\block\logs_that_burn.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\fabric\tags\block\needs_tool_level_4.json
-6638d8ee590fb4cb7a2e26770fc5ae537eed2522 data\minecraft\tags\block\walls.json
-57ba19f800e0897aa037ebaf9a4f9791b3b7cf4e data\minecraft\tags\block\fence_gates.json
+f09d67f0fbb927cc46b213e2620c49b7567ad37d data\minecraft\tags\block\tall_flowers.json
 c3bf552d920eb5ff965dab78ccf5df4934dd634b data\minecraft\tags\block\needs_diamond_tool.json
 f707b86b51609e01305ff219c08a97200ce88f21 data\minecraft\tags\block\needs_iron_tool.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\needs_stone_tool.json
 a3e44eb7ab19b998c9e87241e0f19f8c1f81992c data\minecraft\tags\block\mineable\hoe.json
 70c00065689add70cb799cdb69e62ea00f6f25d5 data\minecraft\tags\block\mineable\axe.json
+b8d7ecd2c3868bb9b7ca867798614cd396ca6e45 data\minecraft\tags\block\mineable\pickaxe.json
+6638d8ee590fb4cb7a2e26770fc5ae537eed2522 data\minecraft\tags\block\walls.json
+57ba19f800e0897aa037ebaf9a4f9791b3b7cf4e data\minecraft\tags\block\fence_gates.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\needs_stone_tool.json
 cf165f7ea0bcec073a0a54a6893883a01a6d4943 data\minecraft\tags\block\wooden_fences.json

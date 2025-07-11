@@ -1,8 +1,15 @@
-// 1.21.1	2025-06-29T19:34:59.0573956	ChipChonk Mod/Tags for minecraft:item
+// 1.21.1	2025-07-11T09:43:13.8737344	ChipChonk Mod/Tags for minecraft:item
 70c00065689add70cb799cdb69e62ea00f6f25d5 data\minecraft\tags\item\planks.json
 98b9c9e6ee81af3047ffa08892682c46254d6cd6 data\minecraft\tags\item\axes.json
-01e147375fd49cac23d187a1c06a3d0fe1dee880 data\minecraft\tags\item\swords.json
+12dba40264d627bc532ec7af115998b49b36a163 data\minecraft\tags\item\foot_armor.json
 55262050d1c0d1618787c689ad89a42ac37bdb79 data\minecraft\tags\item\hoes.json
+3878f67365e7d100266fcde7cf6cdbe27003f46c data\minecraft\tags\item\head_armor.json
 1571101954b11eb8c1548a94a74f53dad1e97684 data\minecraft\tags\item\pickaxes.json
 19f6d1cb7708cf77e89f414dcc7a26159bc91f37 data\minecraft\tags\item\logs_that_burn.json
+f09d67f0fbb927cc46b213e2620c49b7567ad37d data\minecraft\tags\item\tall_flowers.json
+3b0af40d8f99fa218209a592ba6181363c5ca087 data\minecraft\tags\item\enchantable\mace.json
+7d5cb16eddc7cf101c1e61e9e19a69dc329e81af data\minecraft\tags\item\leg_armor.json
+01e147375fd49cac23d187a1c06a3d0fe1dee880 data\minecraft\tags\item\swords.json
+226c7460a24e3afa5f072322bfb1d3670975e463 data\minecraft\tags\item\trimmable_armor.json
+9a46cab236ac897a865b4fd6074d1f2acf32611b data\minecraft\tags\item\chest_armor.json
 ddfd81d93261501ba52bfec1d0c38179dfa33ae5 data\minecraft\tags\item\shovels.json

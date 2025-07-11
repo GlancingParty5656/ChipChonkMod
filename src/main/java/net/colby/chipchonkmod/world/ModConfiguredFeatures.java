@@ -60,6 +60,10 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> CELESTIAL_MOSS_KEY = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(ChipChonkMod.MOD_ID, "celestial_moss"));
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> HYDRANGEA_KEY = registerKey("hydrangea");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> HELENIUMS_KEY = registerKey("heleniums");
+
     public class TwoLeavesBlueOakFeature {
 
         // WeightedBlockStateProvider for random leaves with varying weights
@@ -138,6 +142,11 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(0, 0, 0) // limit, lowerSize, upperSize
         ).build());
 
+        register(context, HYDRANGEA_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.HYDRANGEA)))));
+
+        register(context, HELENIUMS_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.HELENIUMS)))));
 
         //register(context, ACORN_BIOMES_VEGETATION_KEY, Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(Blocks.SHORT_GRASS)));
 

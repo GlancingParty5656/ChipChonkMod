@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "chipchonkmod:block/hydrangea_bottom"
+    },
+    "half=upper": {
+      "model": "chipchonkmod:block/hydrangea_top"
+    }
+  }
+}
