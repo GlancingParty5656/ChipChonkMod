@@ -7,16 +7,10 @@ import net.colby.chipchonkmod.item.custom.*;
 import net.colby.chipchonkmod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
-
-import java.util.function.UnaryOperator;
 
 public class ModItems {
 
@@ -73,10 +67,10 @@ public class ModItems {
 
     public static final Item PORTAL_GUN = registerItem("portal_gun", new PortalGunItem(new Item.Settings().maxCount(1)));
 
-    public static final Item BLUEBERRY = registerItem("blueberry",
-            new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH, (new Item.Settings()).food(ModFoodComponents.BLUEBERRY)));
+    public static final Item BLUEBERRIES = registerItem("blueberries",
+            new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH, (new Item.Settings()).food(ModFoodComponents.BLUEBERRIES)));
 
-    //public static final Item BLUEBERRY = registerItem("blueberry",
+    //public static final Item BLUEBERRIES = registerItem("blueberries",
     //        new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY)));
 
     public static final Item SAPPHIRE_HELMET = registerItem("sapphire_helmet",

@@ -20,7 +20,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chipchonkmod:blueberry"
+          "name": "chipchonkmod:blueberries"
         }
       ],
       "functions": [
@@ -58,7 +58,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chipchonkmod:blueberry"
+          "name": "chipchonkmod:blueberries"
         }
       ],
       "functions": [

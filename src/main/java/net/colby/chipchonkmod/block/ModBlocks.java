@@ -131,8 +131,11 @@ public class ModBlocks {
     public static final Block PORTAL_BLOCK = registerBlock("portal_block",
             new PortalBlock(FabricBlockSettings.copyOf(Blocks.GLASS).noCollision().nonOpaque()));
 
-    public static final Block BLUEBERRY_BUSH = registerBlockWithoutBlockItem("blueberry_bush",
-            new BlueberryBushBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH)));
+    //public static final Block BLUEBERRY_BUSH = registerBlockWithoutBlockItem("blueberry_bush",
+    //        new BlueberryBushBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH)));
+
+
+    public static final Block BLUEBERRY_BUSH = register("blueberry_bush", new BlueberryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)), false);
 
     public static final Block HYDRANGEA = registerBlock("hydrangea",
             new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH).mapColor(MapColor.WATER_BLUE)));
@@ -171,4 +174,14 @@ public class ModBlocks {
         return registerWithItem(name, block, new Item.Settings());
     }
 
+    public static Block register(String name, Block block, boolean shouldRegisterItem) {
+        // This creates an id consisting of the mod id and the name of the block.
+        Identifier id = Identifier.of(ChipChonkMod.MOD_ID, name);
+        // Some blocks may not have an item version of them, such as air. Use this boolean to control that.
+        if (shouldRegisterItem) {
+            BlockItem blockItem = new BlockItem(block, new Item.Settings());
+            Registry.register(Registries.ITEM, id, blockItem);
+        }
+        return Registry.register(Registries.BLOCK, id, block);
+    }
 }

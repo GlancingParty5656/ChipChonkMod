@@ -6,28 +6,17 @@ import net.colby.chipchonkmod.entity.custom.ChipmunkEntity;
 import net.colby.chipchonkmod.entity.custom.MeeplesEntity;
 import net.colby.chipchonkmod.item.ModItemGroups;
 import net.colby.chipchonkmod.item.ModItems;
-import net.colby.chipchonkmod.world.biome.ModBiomes;
 import net.colby.chipchonkmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.biome.v1.TheEndBiomes;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerWorldEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
-import net.fabricmc.fabric.impl.biome.TheEndBiomeData;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.World;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.BiomeKeys;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import terrablender.api.EndBiomeRegistry;
-
-import java.awt.*;
 
 public class ChipChonkMod implements ModInitializer {
 	public static final String MOD_ID = "chipchonkmod";
@@ -36,8 +25,8 @@ public class ChipChonkMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
-		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
 		ModWorldGeneration.generateModWorldGen();
 
 		StrippableBlockRegistry.register(ModBlocks.BLUE_OAK_LOG, ModBlocks.STRIPPED_BLUE_OAK_LOG);
@@ -68,7 +57,7 @@ public class ChipChonkMod implements ModInitializer {
 		CompostingChanceRegistry.INSTANCE.add(ModItems.ACORN, 0.25f);
 		CompostingChanceRegistry.INSTANCE.add(ModBlocks.HYDRANGEA, 0.25f);
 		CompostingChanceRegistry.INSTANCE.add(ModBlocks.HELENIUMS, 0.25f);
-		//CompostingChanceRegistry.INSTANCE.add(ModItems.BLUEBERRY, 0.15f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.BLUEBERRIES, 0.15f);
 
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(ModBlocks.ACORN_BLOCK)

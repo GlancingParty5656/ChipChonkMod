@@ -77,7 +77,6 @@ public class BulletEntity extends PersistentProjectileEntity {
         if (this.BLOCKY) {
             this.getWorld().setBlockState(hitResult.getBlockPos(), getRandomBlock());
         }
-
         this.discard();
     }
 

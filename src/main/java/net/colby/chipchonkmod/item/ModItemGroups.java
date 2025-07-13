@@ -46,7 +46,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ACORN_LAYER_BLOCK);
                         entries.add(ModItems.THICK_OF_IT_MUSIC_DISC);
 
-                        //entries.add(ModItems.BLUEBERRY);
+                        entries.add(ModItems.BLUEBERRIES);
                         entries.add(ModBlocks.HYDRANGEA);
                         entries.add(ModBlocks.HELENIUMS);
 

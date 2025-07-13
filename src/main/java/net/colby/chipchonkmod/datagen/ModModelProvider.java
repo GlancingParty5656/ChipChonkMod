@@ -6,7 +6,6 @@ import net.colby.chipchonkmod.block.custom.BlueberryBushBlock;
 import net.colby.chipchonkmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.TallFlowerBlock;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
@@ -103,6 +102,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SAPPHIRE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SAPPHIRE_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SAPPHIRE_BOOTS);
+
+        itemModelGenerator.register(ModItems.BLUEBERRIES, Models.GENERATED);
 
     }
 }

@@ -6,7 +6,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
@@ -19,11 +18,12 @@ import net.minecraft.world.event.GameEvent;
 public class BlueberryBushBlock extends SweetBerryBushBlock {
     public BlueberryBushBlock(Settings settings) {
         super(settings);
+        this.setDefaultState(this.stateManager.getDefaultState().with(AGE, 0));
     }
 
     @Override
     public ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state) {
-        return new ItemStack(ModItems.BLUEBERRY);
+        return new ItemStack(ModItems.BLUEBERRIES);
     }
 
     @Override
@@ -32,7 +32,7 @@ public class BlueberryBushBlock extends SweetBerryBushBlock {
         boolean bl = i == 3;
         if (i > 1) {
             int j = 1 + world.random.nextInt(2);
-            dropStack(world, pos, new ItemStack(ModItems.BLUEBERRY, j + (bl ? 1 : 0)));
+            dropStack(world, pos, new ItemStack(ModItems.BLUEBERRIES, j + (bl ? 1 : 0)));
             world.playSound(null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES,
                     SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
             BlockState blockState = state.with(AGE, Integer.valueOf(1));
@@ -43,6 +43,8 @@ public class BlueberryBushBlock extends SweetBerryBushBlock {
             return super.onUse(state, world, pos, player, hit);
         }
     }
+
+
 
 }
 

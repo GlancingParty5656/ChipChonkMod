@@ -1,11 +1,11 @@
-// 1.21.1	2025-07-11T09:43:13.8694921	ChipChonk Mod/World Gen
+// 1.21.1	2025-07-12T20:00:42.4357742	ChipChonk Mod/World Gen
 76c97c049577ce423534baa6cbbbcd61ca85dc85 data\chipchonkmod\dimension_type\chipmunkdim_type.json
 c556d7d2fd8e300ad7642d8b0a0e052ba63448a1 data\chipchonkmod\worldgen\configured_feature\thick_blue_oak.json
 741e41b6dcdd0949602030d96ed777fb54c92e7c data\chipchonkmod\worldgen\configured_feature\sapphire_ore.json
 de078e7daa2305b6d0e7ffd5bea3b25b0ee9a322 data\chipchonkmod\worldgen\biome\windswept_acorn_forest.json
 fcc1a0b97a292a59b21786f57922a102de0c6a86 data\chipchonkmod\worldgen\placed_feature\blue_oak_forest_placed.json
-c646ea1f4eac101a9572191e861b1b1dda2f0120 data\chipchonkmod\worldgen\placed_feature\thick_blue_oak_forest_placed.json
 94802f879e0a1ee239d1c026b094c9bc282c78f9 data\chipchonkmod\worldgen\placed_feature\tall_blue_oak_forest_placed.json
+c646ea1f4eac101a9572191e861b1b1dda2f0120 data\chipchonkmod\worldgen\placed_feature\thick_blue_oak_forest_placed.json
 b678277ad3eb25858eec84d5413b86dcb2b1d6c5 data\chipchonkmod\worldgen\configured_feature\tall_blue_oak.json
 3c16c21df132fe574ebd927a0edb403f4de05e99 data\chipchonkmod\worldgen\configured_feature\blue_oak.json
 cb6797509087af4b57f611ae7941c03be00b38fb data\chipchonkmod\worldgen\biome\acorn_plains.json
